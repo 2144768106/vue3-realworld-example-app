@@ -28,6 +28,7 @@ jobs:
          host: ${{secrets.HOST}}
          username: ${{secrets.SSH_USER_NAME}}         
          key: ${{secrets.SSH_KEY}}
+         password: ${{secrets.SSH_PASSWORD}}
          source: "./dist/*"
          target: "/var/www/html"
          strip_components: 1
